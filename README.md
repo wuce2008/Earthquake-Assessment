@@ -118,12 +118,12 @@ Use [mag] to measure if it is the biggest or not. Because from mag description, 
 
 Query:
 
-select
+<select
 *
 from properties p
 inner join geometry g on p.pid = g.pid
 order by mag desc
-limit 1;
+limit 1;>
 
 
 Result:
