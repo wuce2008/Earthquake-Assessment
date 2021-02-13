@@ -1,14 +1,13 @@
 # Earthquake Assessment
 
-## Table of contents:
+# Table of contents:
 
 - [Background](#Background)
-	* [Data source](#data-source)
-	* [Technology](#Technology)
-- [Tasks](#Tasks)
-	* [Database Design](#db-design)
-	* [ER Diagram](#erd)
-	* [ETL Architecture](##etl)
+- [Data source](#data-source)
+- [Technology](#Technology)
+- [Database Design](#db-design)
+- [ER Diagram](#erd)
+- [ETL Architecture](##etl)
 	
 		Extract
 		
@@ -22,20 +21,19 @@ Data modeling evaluation
 
 Furthermore
 
-## Background
+# Background
 
 When the local surface plates move and collide with each other, they will cause earthquakes. Earthquakes are often difficult to predict and it is impossible to prevent them from occurring. However, the U.S. Geological Survey (USGS) can map the future high-risk areas of earthquakes in the United States based on data derived from the locations and times of earthquakes in the past.
 
 This Assessment exhibits earthquake relational database designing, ETL metadata into MySQL, and data analyzing. 
 
-## Data Source<data-source>
+# Data Source<data-source>
 https://earthquake.usgs.gov/fdsnws/event/1/
 
-## Technology
+# Technology
 Python 3.9, MySQL, Tableau
 
-## Tasks
-### Database Design<db-design>
+# Database Design<db-design>
 
 Exploring GeoJSON Summary from https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
 
@@ -50,10 +48,10 @@ Column [sources], [types], [ids] contains multi value in one cell. For database 
 [Geometry]
 Contains earthquake geo information, [latitude], [longitude], [depth]. Main load.
 
-### ER Diagram <erd>
+# ER Diagram <erd>
 ![alt text](http://url/to/img.png)
  
-### ETL Architecture <etl>
+# ETL Architecture <etl>
 
 1. Extract
 
