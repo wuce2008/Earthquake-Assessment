@@ -2,10 +2,10 @@
 
 # Table of contents:
 
-- [Background](#background)
+- [Background](#Background)
 - [Data source](#data-source)
 - [Technology](#Technology)
-- [Database Design](#db-design)
+- [Database Design](#database-design)
 - [ER Diagram](#erd)
 - [ETL Architecture](#etl)
 	
