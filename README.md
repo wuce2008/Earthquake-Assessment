@@ -50,10 +50,10 @@ Column [sources], [types], [ids] contains multi value in one cell. For database 
 [Geometry]
 Contains earthquake geo information, [latitude], [longitude], [depth]. Main load.
 
-### ER Diagram<erd>
+### ER Diagram <erd>
 ![alt text](http://url/to/img.png)
  
-### ETL Architecture<etl>
+### ETL Architecture <etl>
 
 1. Extract
 
