@@ -12,9 +12,9 @@
 		- [Transform](#transform)
 		- [Load](#load)
 		
-- [Analysis]<#analysis>
-- [Data modeling evaluation]<data-modeling-evaluation>
-- [Furthermore]<#furthermore>
+- [Analysis](#analysis)
+- [Data modeling evaluation](#data-modeling-evaluation)
+- [Furthermore](#furthermore)
 
 # Background
 
@@ -106,7 +106,7 @@ json_norm = jn(geojsonrecord)
 
 (Query in python file line 217-340)
 
-## Analysis
+# Analysis
 
 1. biggest earthquake of 2017
 
@@ -174,7 +174,7 @@ order by mag_bin, event_hour
 
 result:
 
-# mag_bin	event_hour	event_times
+mag_bin	event_hour	event_times
 0-1	10	2209
 1-2	19	2370
 2-3	14	754
