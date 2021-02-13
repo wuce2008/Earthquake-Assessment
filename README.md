@@ -1,11 +1,10 @@
 # Earthquake Assessment
 
-# Table of contents:
+## Table of contents:
 
 - [Background](#Background)
-	* [Data source]
-
-Technology
+	* [Data source](#Data Source)
+	* [Technology](#Technology)
 
 Tasks
 
