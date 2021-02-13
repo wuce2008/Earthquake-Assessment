@@ -6,9 +6,9 @@
 	* [Data source](#data-source)
 	* [Technology](#Technology)
 - [Tasks](#Tasks)
-	* [Database Design](#database-design)
-	* [ER Diagram](#erd)
-	* [ETL Architecture](#etl)
+	* [Database Design](##database-design)
+	* [ER Diagram](##erd)
+	* [ETL Architecture](##etl)
 	
 		Extract
 		
