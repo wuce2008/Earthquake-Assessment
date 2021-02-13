@@ -2,14 +2,13 @@
 
 ## Table of contents:
 
-- Background(#Background)
-	* [Data source](#data-source)
-	* [Technology](#Technology)
+- [Background](#Background)
+* [Data source](#data-source)
+* [Technology](#Technology)
 - [Tasks](#Tasks)
-
-	Database Design
-	
-	ETL Architecture 
+* [Database Design](#database-design)
+* [ER Diagram](#erd)
+* [ETL Architecture](#etl)
 	
 		Extract
 		
@@ -36,7 +35,7 @@ https://earthquake.usgs.gov/fdsnws/event/1/
 Python 3.9, MySQL, Tableau
 
 ## Tasks
-Database Design
+### Database Design<database-design>
 
 Exploring GeoJSON Summary from https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
 
@@ -51,10 +50,10 @@ Column [sources], [types], [ids] contains multi value in one cell. For database 
 [Geometry]
 Contains earthquake geo information, [latitude], [longitude], [depth]. Main load.
 
-ER Diagram
+### ER Diagram<erd>
 ![alt text](http://url/to/img.png)
  
-ETL Architecture 
+### ETL Architecture<etl>
 
 1. Extract
 
