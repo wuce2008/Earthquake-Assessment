@@ -6,8 +6,8 @@
 - [Data source](#data-source)
 - [Technology](#Technology)
 - [Database Design](#database-design)
-- [ER Diagram](#erd)
-- [ETL Architecture](#etl)
+- [ER Diagram](#er-diagram)
+- [ETL Architecture](#etl-architecture)
 	
 		Extract
 		
