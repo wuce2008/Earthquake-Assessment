@@ -33,7 +33,7 @@ https://earthquake.usgs.gov/fdsnws/event/1/
 # Technology
 Python 3.9, MySQL, Tableau
 
-# Database Design<db-design>
+# Database Design
 
 Exploring GeoJSON Summary from https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
 
@@ -48,10 +48,10 @@ Column [sources], [types], [ids] contains multi value in one cell. For database 
 [Geometry]
 Contains earthquake geo information, [latitude], [longitude], [depth]. Main load.
 
-# ER Diagram <erd>
+# ER Diagram
 ![alt text](http://url/to/img.png)
  
-# ETL Architecture <etl>
+# ETL Architecture
 
 1. Extract
 
