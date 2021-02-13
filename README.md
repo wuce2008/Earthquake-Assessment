@@ -1,9 +1,9 @@
 # Earthquake Assessment
 
-## Table of contents:
-Background
+# Table of contents:
 
-Data source
+- [Background](#Background)
+	* [Data source]
 
 Technology
 
