@@ -5,9 +5,9 @@
 - [Background](#Background)
 	* [Data source](#data-source)
 	* [Technology](#Technology)
-- [Tasks](##Tasks)
-	* [Database Design](##database-design)
-	* [ER Diagram](##erd)
+- [Tasks](#Tasks)
+	* [Database Design](#db-design)
+	* [ER Diagram](#erd)
 	* [ETL Architecture](##etl)
 	
 		Extract
@@ -35,7 +35,7 @@ https://earthquake.usgs.gov/fdsnws/event/1/
 Python 3.9, MySQL, Tableau
 
 ## Tasks
-### Database Design<database-design>
+### Database Design<db-design>
 
 Exploring GeoJSON Summary from https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
 
