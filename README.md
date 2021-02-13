@@ -118,14 +118,14 @@ Use [mag] to measure if it is the biggest or not. Because from mag description, 
 
 Query:
 
-'''sql
+```sql
 select
 *
 from properties p
 inner join geometry g on p.pid = g.pid
 order by mag desc
 limit 1;
-'''
+```
 
 Result:
 The biggest mag earthquake of 2017 information is
