@@ -12,11 +12,9 @@
 		- [Transform](#transform)
 		- [Load](#load)
 		
-	Analysis
-	
-Data modeling evaluation
-
-Furthermore
+- [Analysis]<#analysis>
+- [Data modeling evaluation]<data-modeling-evaluation>
+- [Furthermore]<#furthermore>
 
 # Background
 
@@ -139,6 +137,7 @@ depth: 47.39
 
 Query:
 
+```sql
 with cte
 as (
 select
@@ -171,6 +170,7 @@ from (
 ) sub
 where rk = 1
 order by mag_bin, event_hour
+```
 
 result:
 
@@ -186,20 +186,18 @@ result:
 		
 3. More Analysis
 
- 
-
 I found some interesting results from earthquake analyzing. 
 
 From the ‘All events in 2017’ we can see the most earthquake In U.S occurred in west coast. That is make sense due to North American plate and the Pacific plate interacting with fault systems crisscrossing above and other active systems.
 
 From ‘Event monthly freq by mag type’ report we can see the ml mag type earthquake is the most frequency in every month in 2017. The most events occurred in May 2017 and there are 10k+ ml type earthquake in the world.
 
- After set mag_bin feature, from report mag with depth we can find the most depth earthquake centralized to mag_bin [3-4], [4-5], [5-6]. But when mag greater than 6, the earthquake depth is lower than preview mag_bin. Maybe due to the earthquake source observation method.
+After set mag_bin feature, from report mag with depth we can find the most depth earthquake centralized to mag_bin [3-4], [4-5], [5-6]. But when mag greater than 6, the earthquake depth is lower than preview mag_bin. Maybe due to the earthquake source observation method.
 
 “Event freq per mag_bin per hour” shows how many events occurred group by mag_bin and hour of the day. The result is as same as the SQL query I provide above. 
 
 
-Data modeling evaluation
+# Data modeling evaluation
 Advantage
 
 Database
@@ -218,15 +216,11 @@ Disadvantage
 
 Transformation is complex. Could optimize it in the future.
 
-Furthermore
+# Furthermore
 
 1. When I analyzed on this earthquake dataset, there is no country – state – city level geo hierarchy. If I can get this geo information, I could build more accuracy analysis report. 
 
 2. This assessment only show 2017 earthquake information. But after the research, from the sources id I found there are some relationship between earthquake and other type of disasters. So if I added more types of disasters data I could generate more relational analysis reports.
-
-Appendix
-
-Amtrak – Customer data mart
 
  
 
