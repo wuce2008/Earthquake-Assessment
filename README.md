@@ -1,35 +1,32 @@
 # Earthquake Assessment
 
-Table of contents:
+## Table of contents:
 Background
 Data source
 Technology
-	Tasks
-		Database Design
-ETL Architecture 
-	Extract
-	Transform
-	Load
-		Analysis
-	Data modeling evaluation
-	Furthermore
-	Appendix
-		Amtrak Customer – Ticket data mart
- 
+Tasks
+	Database Design
+	ETL Architecture 
+		Extract
+		Transform
+		Load
+	Analysis
+Data modeling evaluation
+Furthermore
 
-Background
+## Background
 
 When the local surface plates move and collide with each other, they will cause earthquakes. Earthquakes are often difficult to predict and it is impossible to prevent them from occurring. However, the U.S. Geological Survey (USGS) can map the future high-risk areas of earthquakes in the United States based on data derived from the locations and times of earthquakes in the past.
 
 This Assessment exhibits earthquake relational database designing, ETL metadata into MySQL, and data analyzing. 
 
-Data Source
+## Data Source
 https://earthquake.usgs.gov/fdsnws/event/1/
 
-Technology
+## Technology
 Python 3.9, MySQL, Tableau
 
-Tasks
+## Tasks
 Database Design
 
 Exploring GeoJSON Summary from https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
