@@ -8,12 +8,9 @@
 - [Database Design](#database-design)
 - [ER Diagram](#er-diagram)
 - [ETL Architecture](#etl-architecture)
-	
-		Extract
-		
-		Transform
-		
-		Load
+		- [Extract](#extract)
+		- [Transform](#transform)
+		- [Load](#load)
 		
 	Analysis
 	
@@ -41,11 +38,13 @@ Exploring GeoJSON Summary from https://earthquake.usgs.gov/earthquakes/feed/v1.0
 
 [Features]:
 Properties
+
 Contains earthquake main information, like [id], [mag], [place], [time], etc. Main load.
 
 Column [sources], [types], [ids] contains multi value in one cell. For database design performance concerning, it should follow 3NF.
 
 [Geometry]
+
 Contains earthquake geo information, [latitude], [longitude], [depth]. Main load.
 
 # ER Diagram
@@ -53,14 +52,16 @@ Contains earthquake geo information, [latitude], [longitude], [depth]. Main load
  
 # ETL Architecture
 
-1. Extract
+## 1. Extract
 
 The request query to usgs.gov url cannot download the whole year 2017 earthquake events at one time. So, I used incremental load month by month. 
 
 Query:
 
 usgs_request_url = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson"
+
 usgs_request_url += "&starttime=" + startdate + "&endtime=" + enddate
+
 print(usgs_request_url)
 
 Results:
@@ -81,26 +82,33 @@ Query:
 
 json_norm = jn(geojsonrecord)
 
-2. Transform
+## 2. Transform
 
 2.1. Change time data type from bigint to readable datetime.
+
 2.2. Remove comma in categorical columns.
+
 2.3. Split multi-value column into separate columns in different tables.
-2.4. Generate business key [pid] auto increment every month. (for next month, start from the biggest [pid] to auto increment ).
+
+2.4. Generate business key [pid] auto increment every month. (for next month, start from the biggest [pid] to auto increment).
+
 2.5. Change column names.
 
 (Query in python file function incrementalLoadDF)
 
-3. Load
+## 3. Load
 
-	3.1. Generate table structure in MySQL database.
+3.1. Generate table structure in MySQL database.
+
 [properties], [geometry], [types], [types_properties], [sources], [sources_properties]
-	3.2. Add FK into tables.
+
+3.2. Add FK into tables.
+
 3.3. Remove unused columns
 
 (Query in python file line 217-340)
 
-Analysis
+## Analysis
 
 1. biggest earthquake of 2017
 
