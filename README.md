@@ -2,16 +2,27 @@
 
 ## Table of contents:
 Background
+
 Data source
+
 Technology
+
 Tasks
+
 	Database Design
+	
 	ETL Architecture 
+	
 		Extract
+		
 		Transform
+		
 		Load
+		
 	Analysis
+	
 Data modeling evaluation
+
 Furthermore
 
 ## Background
