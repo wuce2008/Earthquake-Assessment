@@ -2,7 +2,7 @@
 
 # Table of contents:
 
-- [Background](#Background)
+- [Background](#background)
 - [Data source](#data-source)
 - [Technology](#Technology)
 - [Database Design](#db-design)
