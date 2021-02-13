@@ -5,8 +5,7 @@
 - [Background](#Background)
 	* [Data source](#data-source)
 	* [Technology](#Technology)
-
-Tasks
+- Tasks
 
 	Database Design
 	
