@@ -56,11 +56,13 @@ The request query to usgs.gov url cannot download the whole year 2017 earthquake
 
 Query:
 
+```
 usgs_request_url = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson"
 
 usgs_request_url += "&starttime=" + startdate + "&endtime=" + enddate
 
 print(usgs_request_url)
+```
 
 Results:
 
@@ -71,14 +73,17 @@ Results:
 
 Query:
 
+```
 geojsonrecord = requests.get(usgs_request_url).json()
-
+```
 
 1.3. Parse json file and insert it into pandas dataframe.
 
 Query:
 
+```
 json_norm = jn(geojsonrecord)
+```
 
 ## 2. Transform
 
@@ -92,7 +97,7 @@ json_norm = jn(geojsonrecord)
 
 2.5. Change column names.
 
-(Query in python file function incrementalLoadDF)
+(Query in usgs python file function incrementalLoadDF)
 
 ## 3. Load
 
@@ -221,7 +226,3 @@ Transformation is complex. Could optimize it in the future.
 1. When I analyzed on this earthquake dataset, there is no country – state – city level geo hierarchy. If I can get this geo information, I could build more accuracy analysis report. 
 
 2. This assessment only show 2017 earthquake information. But after the research, from the sources id I found there are some relationship between earthquake and other type of disasters. So if I added more types of disasters data I could generate more relational analysis reports.
-
- 
-
-
